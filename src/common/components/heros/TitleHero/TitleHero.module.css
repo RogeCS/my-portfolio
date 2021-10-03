@@ -1,10 +1,10 @@
 .container {
-height: 100%;
+  min-height: 100vh;
   display: grid;
   justify-items: center;
-  gap: 10px;
+  gap: 0px;
   padding-top: 20px;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .about_me {
@@ -36,7 +36,6 @@ height: 100%;
   padding: 0;
   display: flex;
   color: var(--light);
-  
 }
 
 .skill_wrap {
@@ -65,9 +64,13 @@ height: 100%;
 }
 
 .image_wrap{
-  position: relative;
-  width: 85%;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
   max-width: 500px;
+  min-height: 250px;
+  margin-right: 17px;
 }
 
 

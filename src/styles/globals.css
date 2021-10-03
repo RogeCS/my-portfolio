@@ -17,3 +17,33 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.spacer {
+  aspect-ratio: 300/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -200px;
+}
+
+.layer1 {
+  background-image: url('../../public/assets/static/wave-haikei.svg');
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 800px){
+  .spacer {
+  aspect-ratio: 400/150;
+  }
+}
+
+@media (min-width: 1000px){
+  .spacer {
+  aspect-ratio: 900/150;
+  }
+}

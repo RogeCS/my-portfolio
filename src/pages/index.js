@@ -14,9 +14,11 @@ export default function Home() {
 
       <main>
         <TitleHero />
+        <div className="spacer layer1" />
         <AboutMe />
-        <Footer />
+        <div className="spacer layer1 flip" />
       </main>
+      <Footer />
 
     </div>
   )

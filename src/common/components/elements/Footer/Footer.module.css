@@ -9,6 +9,15 @@
   background-color: var(--dark);
 }
 
+.logo_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo_wrap:hover {
+  cursor: pointer;
+}
+
 .footer a {
   display: flex;
   color: var(--light);

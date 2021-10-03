@@ -1,11 +1,11 @@
 .container {
 	min-height: 100vh;
-	height: 100vh;
+
 	padding: 0.5rem;
 }
 
 .primary {
-	background-color: var(--light);
+	background-color: var(--secondary);
 }
 
 .secondary {

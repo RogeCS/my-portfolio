@@ -1,12 +1,13 @@
 import Image from 'next/image';
-import { BsDot } from 'react-icons/bs';
+import { BsDot, BsArrowDownShort } from 'react-icons/bs';
 import FullScreenContainer from '@containers/FullScreenContainer';
-import DownArrowCircleFillBounce from '@animations/DownArrowCircleFillBounce'
+import CircleFillBounce from '@animations/CircleFillBounce'
+import MobilePhone from '@animations/MobilePhone';
 import styles from './TitleHero.module.css';
 
 const TitleHero = () => {
 	return (
-		<FullScreenContainer lightBackground={false}>
+		<FullScreenContainer lightBackground={false} id="title-hero">
 			<div className={styles.container}>
 				<div className={styles.about_me}>
 					<h1 className={styles.title}>
@@ -37,9 +38,11 @@ const TitleHero = () => {
 					</ul>
 				</div>
 				<div className={styles.image_wrap}>
-					<Image src="/assets/static/undraw_Mobile_application.svg" alt="Cartoon image a code review" layout="fill"/>
+					<MobilePhone />
 				</div>
-				<DownArrowCircleFillBounce />
+				<CircleFillBounce scrollTo="about-me">
+					<BsArrowDownShort />
+				</CircleFillBounce>
 			</div>
 		</FullScreenContainer>
 	);

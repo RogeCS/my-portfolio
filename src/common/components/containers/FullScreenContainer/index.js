@@ -1,8 +1,11 @@
 import styles from './FullScreenContainer.module.css';
 
-const FullScreenContainer = ({ children, lightBackground }) => {
+const FullScreenContainer = ({ children, lightBackground, id }) => {
 	return (
-		<div className={`${styles.container} ${ lightBackground ? styles.primary : styles.secondary }`}>
+		<div
+			id={id}
+			className={`${styles.container} ${ lightBackground ? styles.primary : styles.secondary }`}
+		>
 			{children}
 		</div>
 	);

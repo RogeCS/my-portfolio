@@ -1,6 +1,7 @@
 .stage {
   align-self: center;
   margin-bottom: 60px;
+  z-index: 1;
 }
 
 .box {
