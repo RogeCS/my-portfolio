@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/common/components/*"],
+      "@animations/*": ["src/common/components/animations/*"],
+      "@containers/*": ["src/common/components/containers/*"],
+      "@elements/*": ["src/common/components/elements/*"],
+      "@heros/*": ["src/common/components/heros/*"],
+      "@modules/*": ["src/modules/*"],
+      "@images/*": ["public/assets/static/*"]
+    }
+  }
+}

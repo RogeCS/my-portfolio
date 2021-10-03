@@ -1,0 +1,47 @@
+.stage {
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+.box {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: var(--light);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  height: 50px;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  width: 50px;
+}
+
+.box:hover {
+  background-color: #d9d9d9;
+}
+
+.down_arrow_icon {
+  color: var(--dark);
+  font-size: 2rem;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.bounce_7 {
+  animation-name: bounce_7;
+  animation-timing-function: cubic-bezier(0.480, 0.840, 0.420, 1);
+}
+
+@keyframes bounce_7 {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-10px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(0px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  74%  { transform: scale(1,1)      translateY(0); }
+  84%  { transform: scale(1,1)      translateY(0); }
+  94%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
+}
