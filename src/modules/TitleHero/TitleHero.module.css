@@ -4,15 +4,21 @@
   justify-items: center;
   gap: 0px;
   padding-top: 20px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
 }
 
 .about_me {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
+
+.texts {
+  display: grid;
+  place-items: center;
+}
+
 .title a {
   color: var(--light);
   text-decoration: none;
@@ -64,13 +70,14 @@
 }
 
 .image_wrap{
+  position: relative;
   display: grid;
   place-items: center;
   width: 100%;
   height: 100%;
   max-width: 500px;
-  min-height: 250px;
-  margin-right: 17px;
+  min-height: 240px;
+  max-height: 400px;
 }
 
 

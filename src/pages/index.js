@@ -1,7 +1,9 @@
 import Head from 'next/head';
-import TitleHero from '@heros/TitleHero';
+import TitleHero from '@modules/TitleHero';
 import AboutMe from '@modules/AboutMe';
 import Footer from '@elements/Footer';
+import MyProjects from '@modules/MyProjects';
+import projectCardData from '@mocks/data/projectCardData';
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         <div className="spacer layer1" />
         <AboutMe />
         <div className="spacer layer1 flip" />
+        <MyProjects projects={projectCardData}/>
       </main>
       <Footer />
 

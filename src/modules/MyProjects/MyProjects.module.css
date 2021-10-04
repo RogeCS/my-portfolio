@@ -1,0 +1,10 @@
+.container {
+  height: 100%;
+}
+
+.projects_wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr))
+}

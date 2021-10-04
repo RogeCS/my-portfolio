@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/common/components/*"],
+      "@mocks/*": ["src/common/__mocks__/*"],
       "@animations/*": ["src/common/components/animations/*"],
       "@containers/*": ["src/common/components/containers/*"],
       "@elements/*": ["src/common/components/elements/*"],

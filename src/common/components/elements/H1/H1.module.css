@@ -1,0 +1,17 @@
+.h1 {
+  font-size: 3rem;
+  color: var(--light);
+  padding: 10px;
+}
+
+@media (min-width: 800px) {
+  .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .h1 {
+    font-size: 4rem;
+  }
+}
