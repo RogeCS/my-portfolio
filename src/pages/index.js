@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Hero from '@modules/Hero/Hero';
-import AboutMe from '@modules/AboutMe';
 import Footer from '@elements/Footer';
-import MyProjects from '@modules/MyProjects';
-import projectCardData from '@mocks/data/projectCardData';
+import SectionContainer from '@components/containers/SectionContainer/SectionContainer';
+import sectionsData from 'src/common/data/sectionsData';
 
 export default function Home() {
   return (
@@ -15,10 +14,19 @@ export default function Home() {
       </Head>
 
       <main>
-        <Hero /> 
-        <AboutMe />
-        <MyProjects projects={projectCardData}/>
+        <Hero />
+        {sectionsData.map(section => (
+          <SectionContainer
+            id={section.id}
+            title={section.title}
+            subHeader={section.subHeader}
+            secondaryBackground={section.secondaryBackground}
+          >
+            {section.module}
+          </SectionContainer>
+        ))}
       </main>
+      
       <Footer />
     </div>
   )

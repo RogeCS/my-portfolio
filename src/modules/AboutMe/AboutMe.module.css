@@ -12,13 +12,15 @@
 .halfScreenCard {
 	display: grid;
 	grid-auto-rows: inherit;
+	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 	gap: 1rem;
 }
 
-.stats {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 1rem
+
+
+@media (min-width: 500px) {
+	.halfScreenCard {
+		grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+	}
 }
 
