@@ -13,7 +13,7 @@ const sectionsData = [
 		id: "projects",
 		title: "Some of the work I've done",
 		subHeader: "Projects",
-		secondaryBackground: true,
+		secondaryBackground: false,
 		module: <MyProjects />
 	},
 ];

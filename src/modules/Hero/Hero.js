@@ -6,7 +6,7 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
 	return (
-		<div>
+		<div id="title-hero">
 			<MaxWidthContainer>
 				<section className={styles.hero__container}>
 					<hgroup className={styles.texts__wrapper}>

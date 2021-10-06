@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Hero from '@modules/Hero/Hero';
-import Footer from '@elements/Footer';
+import Footer from '@modules/Footer/Footer';
 import SectionContainer from '@components/containers/SectionContainer/SectionContainer';
 import sectionsData from 'src/common/data/sectionsData';
 
@@ -17,6 +17,7 @@ export default function Home() {
         <Hero />
         {sectionsData.map(section => (
           <SectionContainer
+            key={section.id}
             id={section.id}
             title={section.title}
             subHeader={section.subHeader}

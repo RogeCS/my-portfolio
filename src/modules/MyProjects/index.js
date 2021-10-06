@@ -1,8 +1,4 @@
-import FullScreenContainer from '@containers/FullScreenContainer';
-import MaxWidthContainer from '@containers/MaxWidthContainer';
 import ProjectCard from '@components/cards/ProjectCard';
-import H1 from '@elements/H1';
-import SmallHeading from '@elements/SmallHeading';
 import projects from '@mocks/data/projectCardData';
 import styles from './MyProjects.module.css';
 

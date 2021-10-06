@@ -4,8 +4,8 @@ import styles from './GridOfSmallCards.module.css';
 const GridOfSmallCards = ({ icons }) => {
 	return (
 		<section className={styles.stats}>
-			{ icons.map(icon => (
-				<DarkGrayCard>
+			{ icons.map((icon, key) => (
+				<DarkGrayCard key={key}>
 					<div className={styles.stats_wrapper}>
 						<div className={styles.react_icon}>
 							{icon.icon}
