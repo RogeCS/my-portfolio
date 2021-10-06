@@ -13,15 +13,7 @@
 }
 
 .name {
-	margin: 10px 0;
 	font-size: 20vmin;
-}
-
-.profile_description {
-	margin: 0 0 50px 0;
-	font-weight: 400;
-	max-width: 400px;
-	font-size: 3vmin;
-	letter-spacing: -0.03em;
+	margin: 0 0 5rem 0;
 }
 
