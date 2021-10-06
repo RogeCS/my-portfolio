@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import TitleHero from '@modules/TitleHero';
+import Hero from '@modules/Hero/Hero';
 import AboutMe from '@modules/AboutMe';
 import Footer from '@elements/Footer';
 import MyProjects from '@modules/MyProjects';
@@ -15,14 +15,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <TitleHero />
-        <div className="spacer layer1" />
+        <Hero /> 
         <AboutMe />
-        <div className="spacer layer1 flip" />
         <MyProjects projects={projectCardData}/>
       </main>
       <Footer />
-
     </div>
   )
 }

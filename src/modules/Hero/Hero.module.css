@@ -1,0 +1,107 @@
+.hero__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: auto;
+	gap: 10px;
+	min-height: 100vh;
+}
+
+.myImage__wrapper {
+	width: 280px;
+	height: 280px;
+	margin: 50px 0;
+	background-color: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(15px);
+	display: grid;
+	place-items: center;
+	border-radius: 100%;
+	border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.myImage__wrap {
+	width: 92%;
+	height: 92%;
+	position: relative;
+	border-radius: 100%;
+  box-shadow: 0px 0px 20px 20px rgb(255 255 255 / 37%);
+	overflow: hidden;
+}
+
+.texts__wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.name {
+	margin: 18px 0;
+	font-size: 3.8rem;
+}
+
+.job {
+	margin: 0 0 40px 0; 
+	font-weight: 400;
+	line-height: 1.25;
+	font-size: 1.4rem;
+	letter-spacing: -0.03em;
+}
+
+.profile_description {
+	margin: 0;
+	font-weight: 400;
+	line-height: 1.25px;
+	font-size: 1.4rem;
+	letter-spacing: -0.03em;
+}
+
+@media (min-width: 800px) {
+	.name {
+		font-size: 5rem;
+	}
+	.job {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+	.name {
+		font-size: 5.2rem;
+	}
+	.job {
+		font-size: 1.9rem; 
+	}
+	.myImage__wrapper {
+		width: 370px;
+		height: 370px;
+		margin: 20px 0;
+	}
+}
+
+@media (min-width: 1000px) and (min-height: 800px) {
+	.name {
+		font-size: 6rem;
+	}
+	.job {
+		font-size: 2rem; 
+	}
+	.myImage__wrapper {
+		width: 440px;
+		height: 440px;
+	}
+}
+
+@media (min-width: 1000px) and (min-height: 1200px) {
+	.name {
+		font-size: 7rem;
+	}
+	.job {
+		font-size: 2.3rem; 
+	}
+	.myImage__wrapper {
+		width: 500px;
+		height: 500px;
+		margin: 0;
+	}
+}
