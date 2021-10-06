@@ -1,0 +1,24 @@
+.cards__wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.fullScreenCard {
+	display: grid;
+	gap: 1rem;
+}
+
+.halfScreenCard {
+	display: grid;
+	grid-auto-rows: inherit;
+	gap: 1rem;
+}
+
+.stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem
+}
+

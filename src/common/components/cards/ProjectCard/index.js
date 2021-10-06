@@ -1,9 +1,9 @@
 import styles from './ProjectCard.module.css';
 
-const ProjectCard = ({ title, description}) => {
+const ProjectCard = ({ children }) => {
   return (
     <div className={styles.container}>
-      {title}
+      {children}
     </div>
   )
 }

@@ -17,3 +17,9 @@
 	margin: 0 0 5rem 0;
 }
 
+@media (min-width: 1000px) and (min-height: 1000px) {
+	.name{
+		font-size: 10rem;
+	}
+}
+

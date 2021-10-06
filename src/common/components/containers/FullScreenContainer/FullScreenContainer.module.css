@@ -1,6 +1,6 @@
 .container {
 	min-height: 100vh;
-	padding: 5rem 2rem;
+	padding: 5rem 1rem;
 }
 
 .primary {
@@ -10,3 +10,4 @@
 .secondary {
 	background-color: #000;
 }
+

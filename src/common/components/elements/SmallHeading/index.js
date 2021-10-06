@@ -15,13 +15,13 @@ const SmallHeading = ({ children }) => {
 
 					@media (min-width: 800px) {
 					.heading {
-						font-size: 1.8rem;
+						font-size: 1.7rem;
 						}
 					}
 
 					@media (min-width: 1000px) {
 						.heading {
-							font-size: 2.5rem;
+							font-size: 1.9rem;
 						}
 					}
 				`}
