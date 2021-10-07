@@ -17,7 +17,7 @@ const AboutMe = () => {
 						<CardDescription>
 							I love creating and implementing new ideas 
 							with great attention to details and elegant layouts. 
-							I enjoy frontend developement and I am currently working with ReactJS, HTML, CSS and NextJS
+							I enjoy frontend developement and I am currently working with ReactJS, HTML, CSS and NextJS.
 						</CardDescription>
 					</DarkGrayCard>
 					<GridOfSmallCards icons={icons} />
@@ -28,12 +28,12 @@ const AboutMe = () => {
 				</DarkGrayCard>
 			</div>
 			<div className={styles.halfScreenCard}>
-				<DarkGrayCard>
+				<DarkGrayCard padding={64}>
 					<CardTitle>About Rogelio</CardTitle>
 					<CardDescription>
 					</CardDescription>
 				</DarkGrayCard>
-				<DarkGrayCard>
+				<DarkGrayCard padding={64}>
 					<CardTitle>Hobbies</CardTitle>
 					<MyHobbies />	
 				</DarkGrayCard>
