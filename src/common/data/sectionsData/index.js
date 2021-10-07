@@ -1,4 +1,4 @@
-import AboutMe from "@modules/AboutMe";
+import AboutMe from "@modules/AboutMe/AboutMe";
 import MyProjects from "@modules/MyProjects";
 
 const sectionsData = [

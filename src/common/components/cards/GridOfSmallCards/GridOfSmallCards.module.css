@@ -4,3 +4,20 @@
 	grid-template-rows: 1fr 1fr;
 	gap: 1rem
 }
+.react_icon {
+	display: flex;
+	flex-direction: column;
+	font-size: 4rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.react_icon p{
+	margin: 20px 0 0 0;
+  opacity: .4;
+  font-weight: 500;
+  letter-spacing: -.025em;
+	color: var(--text);
+	font-size: 1rem;
+}
+

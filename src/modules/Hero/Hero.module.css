@@ -17,6 +17,17 @@
 	margin: 0 0 5rem 0;
 }
 
+.blue {
+	color: var(--blue);
+  animation: glow 5s forwards;
+}
+
+@keyframes glow {
+  to {
+  	text-shadow: 0 0 20px var(--blue);
+  }
+}
+
 @media (min-width: 1000px) and (min-height: 1000px) {
 	.name{
 		font-size: 10rem;

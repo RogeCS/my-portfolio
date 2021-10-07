@@ -1,28 +1,12 @@
-import { SiReact, SiHtml5, SiCss3, SiJavascript } from 'react-icons/si';
 import CardDescription from '@components/cards/CardDescription/CardDescription';
 import CardTitle from '@components/cards/CardTitle/CardTitle';
 import DarkGrayCard from '@components/cards/DarkGrayCard/DarkGrayCard';
-import styles from './AboutMe.module.css';
 import GridOfSmallCards from '@components/cards/GridOfSmallCards/GridOfSmallCards';
+import MyHobbies from '@components/messages/MyHobbies/MyHobbies';
+import icons from '../../common/data/iconsData';
+import styles from './AboutMe.module.css';
 
-const icons = [
-	{
-		id: 1,
-		icon: <SiReact />,
-	},
-	{
-		id: 2,
-		icon: <SiHtml5 />,
-	},
-	{
- 		id: 3,
-		icon: <SiCss3 />,
-	},
-	{
-		id: 4,
-		icon: <SiJavascript />,
-	},
-];
+
 
 const AboutMe = () => {
 	return (
@@ -33,7 +17,7 @@ const AboutMe = () => {
 						<CardDescription>
 							I love creating and implementing new ideas 
 							with great attention to details and elegant layouts. 
-							I enjoy fronted developement, IT management and Artifitial intelligence
+							I enjoy frontend developement and I am currently working with ReactJS, HTML, CSS and NextJS
 						</CardDescription>
 					</DarkGrayCard>
 					<GridOfSmallCards icons={icons} />
@@ -41,6 +25,17 @@ const AboutMe = () => {
 			<div className={styles.fullScreenCard}>
 				<DarkGrayCard padding={64}>
 					<CardTitle>Responsive<br/> design</CardTitle>
+				</DarkGrayCard>
+			</div>
+			<div className={styles.halfScreenCard}>
+				<DarkGrayCard>
+					<CardTitle>About Rogelio</CardTitle>
+					<CardDescription>
+					</CardDescription>
+				</DarkGrayCard>
+				<DarkGrayCard>
+					<CardTitle>Hobbies</CardTitle>
+					<MyHobbies />	
 				</DarkGrayCard>
 			</div>
 		</section>
