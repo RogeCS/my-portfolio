@@ -4,8 +4,7 @@
   backdrop-filter: blur(15px);
   width: 100%;
   height: 100%;
-  border-radius: 28px;
+  border-radius: 20px;
   transition: border 0.2s ease-in-out;
   padding: 30px;
 }
-

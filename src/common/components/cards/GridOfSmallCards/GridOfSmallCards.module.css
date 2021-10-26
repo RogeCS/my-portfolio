@@ -4,6 +4,13 @@
 	grid-template-rows: 1fr 1fr;
 	gap: 1rem
 }
+
+.stats_wrapper {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	place-items: center;
+}
+
 .react_icon {
 	display: flex;
 	flex-direction: column;
@@ -12,9 +19,10 @@
 	justify-content: center;
 }
 
-.react_icon p{
-	margin: 20px 0 0 0;
-  opacity: .4;
+.icon_text {
+	margin: 0;
+	align-self: flex-end;
+  opacity: .75;
   font-weight: 500;
   letter-spacing: -.025em;
 	color: var(--text);

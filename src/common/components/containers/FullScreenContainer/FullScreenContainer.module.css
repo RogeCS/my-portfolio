@@ -8,6 +8,6 @@
 }
 
 .secondary {
-	background-color: #000;
+	background-color: var(--secondary-bg);
 }
 

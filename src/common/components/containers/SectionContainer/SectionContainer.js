@@ -5,17 +5,27 @@ import H1 from '@elements/H1';
 
 const SectionContainer = ({ children, id, secondaryBackground, title, subHeader }) => {
 	return (
-		<FullScreenContainer id={id} secondaryBackground={secondaryBackground}>
-			<MaxWidthContainer>
+		<>
+			<FullScreenContainer id={id} secondaryBackground={secondaryBackground}>
+				<MaxWidthContainer>
+					<section className="title__wrapper">
+						<SmallHeading>{subHeader}</SmallHeading>
+						<H1>{title}</H1>
+					</section>
 
-				<SmallHeading>{subHeader}</SmallHeading>
-				<H1>{title}</H1>
-
-				<section>
-					{children}
-				</section>
-			</MaxWidthContainer>
-		</FullScreenContainer>
+					<section>
+						{children}
+					</section>
+				</MaxWidthContainer>
+			</FullScreenContainer>
+			<style jsx>
+				{`
+				.title__wrapper {
+					margin: 7% 5%;
+				}
+				`}
+			</style>
+		</>
 	);
 };
 

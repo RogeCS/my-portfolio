@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content {
+  text-align: left;
+}
+
+.image_wrapper {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .content {
+    text-align: center;
+  }
+
+  .image_wrapper {
+    justify-self: flex-end;
+  }
+}

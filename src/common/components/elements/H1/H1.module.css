@@ -1,17 +1,17 @@
 .h1 {
-  font-size: 3rem;
+  font-size: 10vw;
   margin: 1rem 0 4rem 0;
   max-width: 700px;
 }
 
 @media (min-width: 800px) {
   .h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
 @media (min-width: 1000px) {
   .h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
