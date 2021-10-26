@@ -15,6 +15,7 @@
 .name {
 	font-size: 20vmin;
 	margin: 0 0 5rem 0;
+	font-weight: 500;
 }
 
 .blue {
@@ -24,7 +25,7 @@
 
 @keyframes glow {
   to {
-  	text-shadow: 0 0 20px var(--blue);
+  	text-shadow: 0 0 10px var(--blue);
   }
 }
 

@@ -4,8 +4,8 @@ import MyProjects from "@modules/MyProjects";
 const sectionsData = [
 	{
 		id: "about-me",
-		title: "Know me a little bit more",
-		subHeader: "About me",
+		title: "Get to know me",
+		subHeader: "About",
 		secondaryBackground: true,
 		module: <AboutMe />
 	},

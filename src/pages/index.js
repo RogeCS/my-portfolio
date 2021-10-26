@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Rogelio Medina</title>
         <meta name="description" content="I am a junior frontend developer who uses React, NextJS, HTML and CSS" />
-        <html lang="en">
+        <meta lang="en" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -28,7 +28,6 @@ export default function Home() {
           </SectionContainer>
         ))}
       </main>
-      
       <Footer />
     </div>
   )

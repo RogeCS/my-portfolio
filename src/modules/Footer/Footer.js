@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Link } from 'react-scroll'; 
+import { Link } from 'react-scroll';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles.logo_wrap}>
           Created by{' '}
           <span className={styles.logo}>
-            <Image src="/assets/logos/my-portfolio-logo-wh.svg" alt="Rogelio Logo" height={86*logoRatio} width={185*logoRatio} />
+            <Image src="/assets/logos/my-portfolio-logo-bk.svg" alt="Rogelio Logo" height={86*logoRatio} width={185*logoRatio} />
           </span>
         </div>
       </Link>

@@ -8,9 +8,9 @@ const SmallHeading = ({ children }) => {
 				{`
 					.heading {
 						margin: 0;
+						opacity: .6;
 						font-weight: 500;
 						font-size: 1.5rem;
-						color: var(--gray);
 					}
 
 					@media (min-width: 800px) {

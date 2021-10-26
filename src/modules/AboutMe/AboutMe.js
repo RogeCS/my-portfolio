@@ -33,7 +33,7 @@ const AboutMe = () => {
 				<DarkGrayCard padding={64}>
 					<CardTitle>Education</CardTitle>
 					<CardDescription>
-						{"I'm"} an undergraduate student in Information Technology at Tec de Monterrey. I took a concentration in IT Management where I learned about Project Management, Service Management, Governance, Change Management, and Strategic IT Management.
+						{"I'm"} an undergraduate student in Information Technology at Tec de Monterrey. I took a concentration in IT Management where I learned about Project Management, Service Management, Governance, and Change Management.
 					</CardDescription>
 				</DarkGrayCard>
 				<DarkGrayCard padding={64}>

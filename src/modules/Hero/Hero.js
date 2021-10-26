@@ -10,11 +10,11 @@ const Hero = () => {
 			<MaxWidthContainer>
 				<section className={styles.hero__container}>
 					<hgroup className={styles.texts__wrapper}>
-						<h1 className={styles.name}>Hi, <span className={styles.blue}>I'm</span> <br/> Rogelio</h1>
+						<h1 className={styles.name}>Hi, <span className={styles.blue}>{"I'm"}</span> <br/> Rogelio</h1>
 						<CircleFillBounce scrollTo="about-me">
 							<BsArrowDownShort />
 						</CircleFillBounce>
-					</hgroup>	
+					</hgroup>
 				</section>
 			</MaxWidthContainer>
 		</div>
