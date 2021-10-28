@@ -36,8 +36,7 @@ const Home = () => {
   )
 }
 
-export const getStaticProps = wrapper.getStaticProps((store) => async () => {
-  //const apiUrl = process.env.NODE_ENV !== 'production' ? process.env.DEV_API_URL : process.env.API_URL;
+export const getServerSideProps = wrapper.getServerSideProps((store) => async () => {
   let apiUrl = 'https://www.rogeliomedina.dev/api';
   if (process.env.NODE_ENV !== 'production') apiUrl = 'http://localhost:3000/api'
   const response = await fetch(`${apiUrl}/projects`);
