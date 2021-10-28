@@ -7,14 +7,14 @@ const sectionsData = [
 		title: "Get to know me",
 		subHeader: "About",
 		secondaryBackground: true,
-		module: <AboutMe />
+		module: <AboutMe />,
 	},
 	{
 		id: "projects",
 		title: "Some of the work I've done",
 		subHeader: "Projects",
 		secondaryBackground: false,
-		module: <MyProjects />
+		module: <MyProjects />,
 	},
 ];
 

@@ -1,5 +1,13 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const { Client } = require('@notionhq/client');
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
+export default async function handler(req, res) {
+  const database_id = process.env.NOTION_DATABASE_ID
+  const response = await notion.databases.query({
+    database_id,
+  });
+  const results = response.results;
+
+  res.status(200).json({ results })
 }

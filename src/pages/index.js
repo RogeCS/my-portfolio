@@ -1,16 +1,18 @@
+import { connect } from 'react-redux'
+import { wrapper } from '../common/store/store';
+import { fetchProjects } from '../common/store/projects/action';
 import Head from 'next/head';
 import Hero from '@modules/Hero/Hero';
 import Footer from '@modules/Footer/Footer';
 import SectionContainer from '@components/containers/SectionContainer/SectionContainer';
 import sectionsData from 'src/common/data/sectionsData';
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Head>
         <title>Rogelio Medina</title>
         <meta name="description" content="I am a junior frontend developer who uses React, NextJS, HTML and CSS" />
-        <meta lang="en" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -28,8 +30,20 @@ export default function Home() {
           </SectionContainer>
         ))}
       </main>
+      {/*<a target="_blank" rel="noreferrer" href="/assets/pdf/Rogelio_Medina_Resume.pdf"><p>My Resume</p></a>*/}
       <Footer />
     </div>
   )
 }
 
+export const getStaticProps = wrapper.getStaticProps((store) => async () => {
+  //const apiUrl = process.env.NODE_ENV !== 'production' ? process.env.DEV_API_URL : process.env.API_URL;
+  let apiUrl = 'https://www.rogeliomedina.dev/api';
+  if (process.env.NODE_ENV !== 'production') apiUrl = 'http://localhost:3000/api'
+  const response = await fetch(`${apiUrl}/projects`);
+  const { data } = await response.json();
+  store.dispatch(fetchProjects(data))
+})
+
+
+export default connect(null, null)(Home)
