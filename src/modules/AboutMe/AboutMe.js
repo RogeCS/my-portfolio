@@ -25,15 +25,15 @@ const AboutMe = () => {
 			</div>
 			<div className={styles.fullScreenCard}>
 				<CardWithImage title="Drivers">
-				I am a 22 years old student who enjoys learning, being proactive, teamwork, and completing projects successfully.
-				I believe that the best way to grow is by helping others grow with you.
+				I'm a 23-year-old Mexican IT engineer who loves learning, taking initiative, working in teams, and completing projects successfully. 
+				I believe that the best way to grow is by helping others grow alongside you
 				</CardWithImage>
 			</div>
 			<div className={styles.halfScreenCard}>
 				<DarkGrayCard padding={64}>
 					<CardTitle>Education</CardTitle>
 					<CardDescription>
-						{"I'm"} an undergraduate student in Information Technology at Tec de Monterrey. I took a concentration in IT Management where I learned about Project Management, Service Management, Governance, and Change Management.
+						I hold a degree in Information Technology from Tec de Monterrey, where I specialized in IT Management. During my time as a student, I delved into various aspects of IT Management, including Project Management, Service Management, Governance, and Change Management.
 					</CardDescription>
 				</DarkGrayCard>
 				<DarkGrayCard padding={64}>
