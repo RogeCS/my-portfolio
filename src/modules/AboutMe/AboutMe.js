@@ -14,11 +14,9 @@ const AboutMe = () => {
 		<section className={styles.cards__wrapper}>
 			<div className={styles.halfScreenCard}>
 					<DarkGrayCard padding={64}>
-						<CardTitle>Junior frontend developer</CardTitle>
+						<CardTitle>Early Solution Engineer</CardTitle>
 						<CardDescription>
-							I love creating and implementing new ideas
-							with great attention to details and elegant layouts.
-							I enjoy frontend developement and I am currently working with ReactJS, HTML, CSS and NextJS.
+						I'm a Solution Engineer focused on understanding customer pain points and providing effective solutions. I enjoy coding web applications and learning about new technologies.
 						</CardDescription>
 					</DarkGrayCard>
 					<GridOfSmallCards icons={icons} />
