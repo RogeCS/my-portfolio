@@ -1,4 +1,5 @@
 import AboutMe from "@modules/AboutMe/AboutMe";
+import Experience from "@modules/Experience/Experience";
 import MyProjects from "@modules/MyProjects";
 
 const sectionsData = [
@@ -10,10 +11,17 @@ const sectionsData = [
 		module: <AboutMe />,
 	},
 	{
+		id: "resume",
+		title: "Experience",
+		subHeader: "Timeline",
+		secondaryBackground: false,
+		module: <Experience />,
+	},
+	{
 		id: "projects",
 		title: "Some of the work I've done",
 		subHeader: "Projects",
-		secondaryBackground: false,
+		secondaryBackground: true,
 		module: <MyProjects />,
 	},
 ];
