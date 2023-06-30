@@ -4,11 +4,11 @@ import styles from './ProjectCard.module.css';
 const ProjectCard = ({ pid, title, date, cover }) => {
   return (
     <>
-      <Link href={`/project/${pid}`}>
-        <a
-          className={`${styles.container} test`}
+      <Link href={`/project/${pid}`} passHref>
+        <div
+          className={`color-inherit ${styles.container} test`}
           >
-        </a>
+        </div>
       </Link>
       <style jsx>
       {`

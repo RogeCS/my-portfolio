@@ -21,8 +21,8 @@ const CardWithImage = ({ children, title, }) => {
               src="/assets/static/co-working.svg" alt="Rogelio Logo"
               width={20}
               height={20}
-              layout="responsive"
               priority
+              className={styles.image}
             />
           </div>
         </div>

@@ -5,10 +5,10 @@ const Project = () => {
     <div className="container">
       <div className="text_wrapper">
       <h1>Site on construction</h1>
-      <Link href="/">
-        <a>
+      <Link href="/" passHref>
+        <p className="color-inherit">
           go back
-        </a>
+        </p>
       </Link>
       </div>
       <style jsx>
