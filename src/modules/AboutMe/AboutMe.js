@@ -16,14 +16,14 @@ const AboutMe = () => {
 					<DarkGrayCard padding={64}>
 						<CardTitle>Early Solution Engineer</CardTitle>
 						<CardDescription>
-						I'm a Solution Engineer focused on understanding customer pain points and providing effective solutions. I enjoy coding web applications and learning about new technologies.
+						I{"'"}m a Solution Engineer focused on understanding customer pain points and providing effective solutions. I enjoy coding web applications and learning about new technologies.
 						</CardDescription>
 					</DarkGrayCard>
 					<GridOfSmallCards icons={icons} />
 			</div>
 			<div className={styles.fullScreenCard}>
 				<CardWithImage title="Drivers">
-				I'm a 23-year-old Mexican IT engineer who loves learning, taking initiative, working in teams, and completing projects successfully. 
+				I{"'"}m a 23-year-old Mexican IT engineer who loves learning, taking initiative, working in teams, and completing projects successfully. 
 				I believe that the best way to grow is by helping others grow alongside you
 				</CardWithImage>
 			</div>

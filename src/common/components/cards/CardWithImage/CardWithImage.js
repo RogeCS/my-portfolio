@@ -4,7 +4,6 @@ import CardTitle from '../CardTitle/CardTitle';
 import CardDescription from '../CardDescription/CardDescription';
 import styles from './CardWithImage.module.css';
 const CardWithImage = ({ children, title, }) => {
-  //hola
   return (
     <div>
       <DarkGrayCard secondaryBG padding={64}>
